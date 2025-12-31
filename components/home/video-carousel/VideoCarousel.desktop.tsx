@@ -259,6 +259,7 @@ export default function VideoCarouselDesktop({
       </div>
 
       <SelectPackageDialog
+        selectedFormat={selectedFormat        
         open={openDialog}
         onOpenChange={setOpenDialog}
         title={data[activeIndex].title}
