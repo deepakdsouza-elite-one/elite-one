@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export const GOOGLE_SHEETS_API = "https://script.google.com/macros/s/AKfycbzwzEfxYDHUJoNEqbxm8pdWNd6qTtN0A_0cTCBhVJ2sTIP4mYiMt7Y75Zg3dNrAoBl_/exec"
+export const GOOGLE_SHEETS_API = "https://script.google.com/macros/s/AKfycbzRNj8U_o4Ld96V94Vm5xBuE4RRoY3hoXaLMtsILgL7N2va_bnfe57MueAPONVoMkvW/exec"
 
 export const scrollTo = (id: string) => {
   document
