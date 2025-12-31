@@ -19,12 +19,14 @@ type Props = {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   title: string;
+  selectedFormat
 };
 
 export default function SelectPackageDialog({
   open,
   onOpenChange,
   title,
+  selectedFormat
 }: Props) {
   const [loading, setLoading] = useState(false);
   const showToast = useToast();
@@ -57,7 +59,8 @@ export default function SelectPackageDialog({
 
     const formData = new FormData(e.currentTarget);
     formData.append("style", title);
-
+    formData.append("form", selectedFormat);
+    
     try {
       const res = await fetch(GOOGLE_SHEETS_API, {
         method: "POST",
