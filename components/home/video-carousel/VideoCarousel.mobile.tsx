@@ -249,6 +249,7 @@ export default function VideoCarouselMobile({
       </div>
 
       <SelectPackageDialog
+        selectedFormat={selectedFormat}
         open={openDialog}
         onOpenChange={setOpenDialog}
         title={selectedItem.title}
