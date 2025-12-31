@@ -56,7 +56,7 @@ export default function SelectPackageDialog({
     setLoading(true);
 
     const formData = new FormData(e.currentTarget);
-    formData.append("package", title);
+    formData.append("style", title);
 
     try {
       const res = await fetch(GOOGLE_SHEETS_API, {
